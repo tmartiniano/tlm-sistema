@@ -53,3 +53,19 @@ Nenhum volume Docker existente na auditoria inicial.
 ## Diretriz
 
 O EasyPanel será o painel oficial para instalar e administrar os serviços do sistema.
+
+## PostgreSQL do sistema
+
+- Serviço: PostgreSQL criado pelo EasyPanel
+- Imagem: postgres:16-alpine
+- Versão identificada: PostgreSQL 16.15
+- Banco: tlm_sistema
+- Usuário da aplicação: tlm_app
+- Porta interna: 5432
+- Porta 5432 publicada no host: não
+- Persistência: volume Docker configurado
+- Caminho no container: /var/lib/postgresql/data
+- Rede EasyPanel: easypanel
+- Rede do projeto: easypanel-tlm-sistema
+- Estado: pronto para aceitar conexões
+- Senha: armazenada exclusivamente no EasyPanel

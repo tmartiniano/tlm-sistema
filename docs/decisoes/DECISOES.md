@@ -23,3 +23,7 @@ A primeira versão será uma aplicação única para reduzir a complexidade oper
 ## DEC-006 — Interface
 
 A interface será desenvolvida em português do Brasil, com foco visível e navegação acessível.
+
+## DEC-007 — PostgreSQL persistente pelo EasyPanel
+
+O PostgreSQL será administrado pelo EasyPanel, com volume persistente no caminho `/var/lib/postgresql/data`. A porta 5432 não será publicada na internet.
